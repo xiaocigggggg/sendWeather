@@ -29,13 +29,13 @@ def get_count():
   return delta.days
 
 def get_birthday1():
-  next = datetime.strptime(str(date.today().year) + "-" + birthday, "%Y-%m-%d")
+  next = datetime.strptime(str(date.today().year) + "-" + birthday1, "%Y-%m-%d")
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
   return (next - today).days
 
 def get_birthday2():
-  next = datetime.strptime(str(date.today().year) + "-" + birthday, "%Y-%m-%d")
+  next = datetime.strptime(str(date.today().year) + "-" + birthday2, "%Y-%m-%d")
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
   return (next - today).days
