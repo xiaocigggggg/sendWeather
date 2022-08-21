@@ -57,7 +57,7 @@ wea, temperature = get_weather()
 data = {
   "weather":{"value":wea},
   "temperature":{"value":temperature},
-  "love_days":{"value":get_count()},
+  "love_day":{"value":get_count()},
   "birthday_left":{"value":get_birthday1()},
   "birthday_right":{"value":get_birthday2()},
   "words":{"value":get_words(), 
